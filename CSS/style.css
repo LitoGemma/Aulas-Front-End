@@ -1,0 +1,26 @@
+p {
+    color: rgb(0, 255, 174);}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: brown;}
+
+.p_first{
+    color: rgb(180, 140, 218);
+    background-color: rgb(18, 10, 2);
+    text-decoration: line-through;
+}
+
+h4 {text-align: center;
+    color: rgb(121, 217, 158);
+
+}
+
+#h4_second{
+    text-decoration: overline;
+    color: rgb(23, 164, 93);
+
+}
+
+*{background-color: rgb(224, 154, 67);}
