@@ -7,7 +7,35 @@ body{
 
 *{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-    
+  p {text-align: justify;} 
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(72, 5, 5, 0.9);
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    height: 80px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 180px;
+    margin-left: 100px;
+}
+
+.nav_item{
+    color: rgb(5, 5, 5);
+    list-style-type: none;
+    font-size: 20px;
+}
+
 .Sumario{
     display: flex;
     flex-direction: column;
@@ -22,6 +50,7 @@ body{
     border-style: groove;
     justify-content: center;
     margin-left: 34.5%;
+    margin-top: 100px;
 }
 
 .colunas{
@@ -100,22 +129,25 @@ body{
 .color_bg3:hover{ 
     box-shadow: 15px -20px 40px white;
     background-color: rgba(160, 21, 130, 0.9);
-}    
+}   
 
-.Lista{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.Feed1{
     display: flex;
     flex-direction: column;
+    gap: 5;
     align-items: center;
     color: aliceblue;
 }
 
+.Lista{
+    margin-left: -40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .tabela{
     color: rgb(40, 40, 15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 30px;
 
 }
 
@@ -129,31 +161,35 @@ body{
     border: 2px solid;
     border-color: rgb(255, 196, 234);
     background-color: rgb(229, 143, 229);
+    
 }
 
 .divVideo{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.galeria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .galeria td img{
     padding: 20px;
 }
 
-p {text-align: justify;}
+.galeria_videos td iframe{
+    padding: 20px;
+}
 
-h3{
-    margin-left: 44.5%;
-    color: rgb(237, 232, 237);
-    align-items: justify;
+.fotos_galeria{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    gap: 50px 50px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+.fotos_galeria img:hover{
+    transform: scale(1.100);
 }
 
 
