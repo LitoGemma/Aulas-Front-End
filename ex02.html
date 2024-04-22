@@ -139,13 +139,13 @@
         </div>
     </div>
 <div class="Feed1">
-    <div class="Lista">
+    <section class="Lista">
         <ul>
             <li>Autor 1: J.B</li>
             <li>Autor 2: K.R</li>
             <li>Autor 3: G.P</li>
         </ul>
-    </div>
+    </section>
 
     <h3>Tabela Simples</h3>
 
@@ -170,11 +170,11 @@
         </tr>
     </table>
     <h3> EX: COMO COLOCAR VIDEO NO HTML </h3>
-    <div class="divVideo">
+    <section class="Video">
         <video id="video" controls>
             <source src="mp4/mp4.1.mp4" type= "video/mp4"></source>
         </video>
-    </div>
+    </section>
 
     <h3> VOCÊ!!! (EXEMPLO COMO FAZER UMA GALERIA) </h3>
     <table class="galeria">
@@ -216,8 +216,8 @@
 
     <h3> FLEX WRAP </h3>
 
-    <div class="galeria_2">
-        <div class="fotos_galeria">
+    <section class="galeria_2">
+        <section class="fotos_galeria">
             <img alt = "img6" src = "img\img6.jpg" width="300px" ></img>
             <img alt = "img6" src = "img\img6.jpg" width="300px" ></img>
             <img alt = "img6" src = "img\img6.jpg" width="300px" ></img>
@@ -227,9 +227,68 @@
             <img alt = "img6" src = "img\img6.jpg" width="300px" ></img>
             <img alt = "img6" src = "img\img6.jpg" width="300px" ></img>
             <img alt = "img6" src = "img\img6.jpg" width="300px" ></img>
-        </div>
-    </div>
+        </section>
+    </section>
+    <section class="Formulario">
+        <form class="textos">
 
+            <p></p>
+
+            <label class="nomeLabel" for="">Nome</label>
+            <input class="inputTextos" type="text" name="input" placeholder="Digite Aqui">
+        
+            <label class="nomeLabel" for="">E-mail</label>
+            <input class="inputTextos" type="text" name="input" placeholder="Digite Aqui">
+
+            <p></p>
+        
+            <label class="nomeLabel" for="">Faixa etária</label>
+        
+            <div class="radioButton">
+        
+                <input type="radio" name="idade" value="Novo">
+                <label class="nomeradio" for="">Novo</label>
+        
+                <input type="radio" name="idade" value="maismenosNovo">
+                <label class="nomeradio" for="">maismenosNovo</label>
+        
+                <input type="radio" name="idade" value="Velho">
+                <label class="nomeradio" for="">Velho</label>
+
+            </div>
+
+            <p></p>
+
+            <label class="nomeLabel" for="">Interesses</label>
+                
+            <div class="checkBox">
+        
+                <input type="checkBox" name="opcoes" value="1">
+                <label class="nomeradio" for="">Bonitos</label>
+            
+                <input type="checkBox" name="opcoes" value="2">
+                <label class="nomeradio" for="">Charmosos</label>
+            
+                <input type="checkBox" name="opcoes" value="3">
+                <label class="nomeradio" for="">Sexys</label>
+                
+            </div>
+
+            <p></p>
+
+            <label class="nomeLabel" for="">Conte sua Historia</label>
+
+            <p></p>
+
+            <textarea type="text" class="textarea"></textarea>
+
+            <p></p>
+
+            <button class="enviar">Enviar</button><br>
+
+        </form>
+    </section>   
+    
 </div>    
 </body>
 </html>

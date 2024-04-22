@@ -38,19 +38,20 @@ header{
 
 .Sumario{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: rgba(150, 129, 10, 0.9);
-    height:350px;
-    width:300px;
+    height:100%;
+    width:50%;
     padding:40px 40px;
+    gap: 50px 50px;
     border-radius: 20px;
     border-color:  rgba(103, 87, 2, 0.9);
     border-width: 5px;
     border-style: groove;
     justify-content: center;
-    margin-left: 34.5%;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .colunas{
@@ -68,7 +69,7 @@ header{
         overflow: auto;
         background-color: rgb(11, 101, 18, 0.9);
         height:1000px;
-        width:350px;
+        width:100%;
         padding:40px 40px;
         border-radius: 20px;
         margin: 10px;
@@ -85,8 +86,8 @@ header{
         align-items: center;
         overflow: auto;
         background-color: rgb(163, 49, 51, 0.9);
-        height: 1000px;
-        width:350px;
+        height:1000px;
+        width:100%;
         padding:40px 40px;
         border-radius: 20px;
         margin: 10px;
@@ -103,8 +104,8 @@ header{
         align-items: center;
         overflow: auto;
         background-color: rgb(123, 16, 100, 0.9);
-        height: 1000px;
-        width:350px;
+        height:1000px;
+        width:100%;
         padding:40px 40px;
         border-radius: 20px;
         margin: 10px;
@@ -164,13 +165,16 @@ header{
     
 }
 
-.divVideo{
+.Video{
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
 .galeria td img{
     padding: 20px;
+    background-color: rgba(18, 76, 48, 0.9);
+    border-radius: 20px;
+
 }
 
 .galeria_videos td iframe{
@@ -186,11 +190,34 @@ header{
     justify-content: center;
     margin-top: 20px;
     margin-left: 65px;
+    margin-bottom: 50px;
 }
 
 .fotos_galeria img:hover{
     transform: scale(1.100);
 }
 
+.Formulario{
+    background-color: rgba(150, 129, 10, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px 50px;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding:40px 40px;
+    border-style: groove;
+    border-radius: 20px;
+    border-color:  rgba(103, 87, 2, 0.9);
+    border-width: 5px;
+}
 
+.enviar {
+    background-color: rgba(86, 74, 5, 0.9);
+    height: 50px;
+    width: 100px;
+    color: antiquewhite;
+    
+}
 
