@@ -197,7 +197,13 @@ header{
     transform: scale(1.100);
 }
 
-.Formulario{
+.div_Form{
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    align-items: center;
+}
+.Formulario, .img_Div{
     background-color: rgba(150, 129, 10, 0.9);
     display: flex;
     flex-wrap: wrap;
@@ -217,7 +223,8 @@ header{
     background-color: rgba(86, 74, 5, 0.9);
     height: 50px;
     width: 100px;
-    color: antiquewhite;
-    
+    color: antiquewhite; 
 }
+
+
 
