@@ -16,7 +16,16 @@
         "logo nav nav"
         "sidenav content advert"
         "sidenav footer footer"
-        "sidenav footer footer";
+        
+}
+
+.grid-template {
+    grid-template:
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px
+    / 100px 1fr 300px;
+    
 }
 
 .logo{

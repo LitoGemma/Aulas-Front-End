@@ -1,0 +1,80 @@
+
+.grid{
+    display:grid
+}
+
+.item{
+    margin: 8px;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desafio_Grid2{
+    grid-template:
+    "header_2 header_2 header_2" 150px
+    "nav_2 section aside" 400px
+    "footer_2 footer_2 footer_2" 100px
+    / 300px 1fr 300px;
+}
+
+.header{
+    grid-area: header_2;
+    background: tomato;
+    border-radius: 10px;
+}
+
+.nav{
+    grid-area: nav_2;
+    background: salmon;
+    border-radius: 10px;
+    
+}
+
+.section{
+    grid-area: section;
+    background: limegreen;
+    display: grid;
+    grid-column: auto;
+    padding-bottom: 5px;
+    border-radius: 10px;
+
+}
+
+.section header{
+    background: rgb(117, 230, 117);
+    width: 750px;
+    height: 80px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.section article{
+    background: rgb(117, 230, 117);
+    width: 750px;
+    height: 150px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.section footer{
+    background: rgb(117, 230, 117);
+    width: 750px;
+    height: 80px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.aside{
+    grid-area: aside;
+    background: orange;
+    border-radius: 10px;
+}
+
+.footer{
+    grid-area: footer_2;
+    background: violet;
+    border-radius: 10px;
+}
