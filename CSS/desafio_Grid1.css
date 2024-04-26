@@ -34,6 +34,11 @@
 .content-main{
     grid-area: content-main;
     background: limegreen;
+
+    @media screen and (max-width:780px) {
+        background: orangered !important;
+
+    }
 }
 .content-right{
     grid-area: content-right;
@@ -43,3 +48,25 @@
     grid-area: footer;
     background: violet;
 }
+
+.navbar.bg-body-tertiary{
+    background-color: tomato !important; 
+    height: 40px !important;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    
+    .desafio_Grid1 {
+        grid-template:
+        "header" 60px
+        "nav" 50px
+        "content-left" 1fr
+        "content-main" 4fr
+        "content-right" 1fr
+        "footer" 60px
+        / 1fr ;
+    }
+    
+}
+
