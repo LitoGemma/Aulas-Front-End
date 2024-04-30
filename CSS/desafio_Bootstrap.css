@@ -1,5 +1,5 @@
 body{
-    background: rgb(100, 100, 100) url("../img/pexels-aditya-aiyar-1407305.jpg");
+    background: url("img\background_Planta.jpg");
     background-size: cover;
 }
 
@@ -26,8 +26,8 @@ body{
 .grid-template {
     grid-template:
         "header" 100px
-        "content" 600px
-        "content2" 600px
+        "content1" 700px
+        "content2" 900px
         "content3" 600px
         "footer" 100px
         / 1fr ;
@@ -49,6 +49,31 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.content1 {
+    grid-area: content1;    
+    z-index: 900;
+    background: black !important;
+    object-fit: cover;
+}
+
+.carousel-item {
+    object-fit: cover;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.content3 {
+    grid-area: content3;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
 
 
 
