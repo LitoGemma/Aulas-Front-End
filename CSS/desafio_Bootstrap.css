@@ -1,0 +1,55 @@
+body{
+    background: rgb(100, 100, 100) url("../img/pexels-aditya-aiyar-1407305.jpg");
+    background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    font-family: "Quicksand" , serif !important;
+    font-size: large;
+    font-weight: 600;
+}
+
+.grid{
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+}
+
+.item {
+    background: olive;
+    text-align: center;
+    font-size: 15px;
+}
+
+.grid-template {
+    grid-template:
+        "header" 100px
+        "content" 600px
+        "content2" 600px
+        "content3" 600px
+        "footer" 100px
+        / 1fr ;
+}
+
+.header{
+    grid-area: header;
+    position: fixed;
+    width: 100%;    
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+}
+
+.navbar.bg-dark{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
