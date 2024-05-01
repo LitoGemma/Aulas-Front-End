@@ -50,6 +50,23 @@ body{
     justify-content: center;
 }
 
+.nav-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn.btn-light {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn.btn-dark {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+// colocar icone
+
 .content1 {
     grid-area: content1;    
     z-index: 900;
@@ -63,6 +80,17 @@ body{
 
 .content2 {
     grid-area: content2;
+}
+
+.form-label {
+    margin-top: 20px;
+}
+
+.btn.btn-primary {
+    margin-top: 20px;
+    background-color: black;
+    border-color: black;
+    color: olive;
 }
 
 .content3 {
