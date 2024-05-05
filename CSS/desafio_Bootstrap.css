@@ -1,7 +1,6 @@
-body{
+/* body{
     background: rgb(100, 100, 100) url("../img/background_Planta.jpg");
     background-size: cover;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
@@ -18,19 +17,20 @@ body{
 }
 
 .item {
-    background: olive;
+    background: rgb(71, 71, 1);
     text-align: center;
     font-size: 15px;
 }
 
 .grid-template {
     grid-template:
-        "header" 100px
-        "content1" 700px
+        "header" 80px
+        "content1" 100vh
         "content2" 900px
         "content3" 600px
         "footer" 100px
         / 1fr ;
+
 }
 
 .header{
@@ -40,11 +40,15 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 100px;
 }
 
 .navbar.bg-dark{
     height: 100px;
+.navbar{
+    height: 80px;
+}
+
+.navbar-nav{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,24 +61,39 @@ body{
 
 .btn.btn-light {
     margin-left: 20px;
-    margin-right: 20px;
     display: none;
 }
 
-.btn.btn-dark {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 .content1 {
     grid-area: content1;    
     z-index: 900;
     background: black !important;
-    object-fit: cover;
 }
 
-.carousel-item {
-    object-fit: cover;
+.bg-img-1 {
+    background-image: url(../img/Bulba.png);
+}
+
+.bg-img-2 {
+    background-image: url(../img/Eevee.jpg);
+}
+
+.bg-img-3 {
+    background-image: url(../img/Pikachu.jpg);
+}
+
+.bg-img-4 {
+    background-image: url(../img/Squirtle.png);
+}
+
+.carousel-image{
+    height: 100vh;
+    width: 2000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .content2 {

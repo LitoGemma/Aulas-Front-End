@@ -10,7 +10,7 @@ btnDark.addEventListener("click", function() {
     body.style.color = "white";
     btnDark.style.display = "none";
     btnLight.style.display = "block";
-
+    body.data-bs-theme = "dark";
 
     navLinks.forEach(function(link) {
         link.style.setProperty ("color", "white", "important");
@@ -30,6 +30,7 @@ btnLight.addEventListener("click", function() {
     body.style.color = "black";
     btnDark.style.display = "block";
     btnLight.style.display = "none";
+    body.data-bs-theme = "light";
 
 
     navLinks.forEach (function(link) {
