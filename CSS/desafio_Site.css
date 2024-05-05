@@ -1,0 +1,28 @@
+.body{
+    background-color: white;
+}
+
+.grid{
+    display: grid;
+    gap: 30px;
+    height: 100vh;
+}
+
+.item{
+    background-color: bisque;
+    text-align: center;
+    font-size: 15px;
+}
+
+.grid-template {
+    grid-template:
+        "header" 50px
+        "content_1" 700px
+        "content_2" 900px
+        "content_3" 600px
+        "footer" 100px
+        / 1fr ;}
+
+.navbar-nav {
+    color:rgb(227, 160, 35);
+}
