@@ -1,6 +1,7 @@
 /* body{
     background: rgb(100, 100, 100) url("../img/background_Planta.jpg");
     background-size: cover;
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
@@ -42,8 +43,6 @@
     z-index: 1000;
 }
 
-.navbar.bg-dark{
-    height: 100px;
 .navbar{
     height: 80px;
 }
