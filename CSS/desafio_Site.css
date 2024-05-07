@@ -21,8 +21,8 @@
         "header" 50px
         "content_1" 835px
         "content_2" 800px
-        "content_3" 600px
-        "footer" 500px
+        "content_3" 500px
+        "footer" 550px
         / 1fr ;}
 
 .header{
@@ -33,11 +33,14 @@
     top: 0;
     left: 0;
     background-color: rgba(242, 242, 242, 1) !important;
+
 }
 
 .navbar-brand {
-    margin-right: 750px !important;
+    margin-right: 350px !important;
 }
+
+
 
 .nav-link{
     font-family: "Ubuntu Sans", sans-serif !important;
@@ -109,6 +112,7 @@
 .content_2{
     grid-area: content_2;
     padding-top: 15px;
+    gap: 10000px
 }
 
 .h4{   
@@ -129,34 +133,33 @@
 .img1{
     background-image: url(../img/model1.jpg);
     grid-row: 1 / 3;
-    height: 102vh;
+    height: 600px;
 }
 
 .img2{
     background-image: url(../img/model2.jpg);
-    height: 50vh;
+    height: 2fr;
 }
 
 .img3{
     background-image: url(../img/model3.jpg);
-    height: 50vh;
+    height: 2fr;
 }
 
 
-.gallery_catalog{
-    display: grid !important;
+.gallery_maisVendidos{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
  
-.gallery_catalog img{
+.gallery_maisVendidos img{
     grid-column: 1;
     grid-row: 1/3;
     align-self: end;
 }
 
-.gallery_catalog p{
+.gallery_maisVendidos p{
     background: rgba(0, 0, 0, 0.6);
     padding: 10px;
     color: white;
@@ -170,6 +173,48 @@
     padding-top: 15px;
 }
 
+.catalog{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap:  10px;
+
+}
+
+.gallery_catalog{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery_catalog C_img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+.C_img1{
+    background-image: url("../img/3D_VasoPLanta.png");
+    grid-column: 1;
+}
+
+.C_img2{
+    background-image: url("../img/3D_Pikachu.png");
+}
+
+.C_img3{
+    background-image: url("../img/3DGengar.png");
+}
+
+.C_img4{
+    background-image: url("../img/3DHulk.png");
+}
+
+.C_img5{
+    background-image: url("../img/3DInitials.png");
+}
+
+.C_img6{
+    background-image: url("../img/3DSuporte_Celular.png");
+}
 
 .footer{
     grid-area: footer;
@@ -201,7 +246,6 @@
     color: rgba(242, 79, 19, 1);
 }
 
-
 .footer_contacts{
     display: flex;
     flex-direction: column;
@@ -210,27 +254,33 @@
     margin-top: 20px;
 }
 
+.footer_contacts img{
+    width: 100%;
+    height: 100%;
+}
+
 .footer_social_media{
     display:flex;
     gap:2rem;
     margin-top: 20px;
 }
 
-.footer_social_media .footer-link{
+/* .footer_social_media .footer-link{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-}
+} */
 
 .footer_subscribe{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
     align-items: center;
     justify-content: center;
 }
 
 .footer_copyright{
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
